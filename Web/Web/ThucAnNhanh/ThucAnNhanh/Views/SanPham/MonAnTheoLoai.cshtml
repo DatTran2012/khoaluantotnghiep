@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "MonAnTheoLoai";
+    Layout = "~/Views/Shared/_LayoutShare2.cshtml";
+}
+@model IEnumerable<ThucAnNhanh.Models.MonAn>
+
+<!--MonAn-->
+<section class="shop-area pt-100 pb-100">
+    <div class="container">
+        @*@Html.Action("SapXepMAPartial", "SanPham");*@
+        <div class="woocommerce-topbar">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-7 col-sm-6">
+                    <div class="woocommerce-result-count">
+                        Đã tìm thấy kết quả: <span style="color:red">@ViewBag.loai </span>trong <span style="color:red">@ViewBag.tong</span> sản phẩm</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-6">
+                    <div class="woocommerce-topbar-ordering">
+                        @*<a href="/SanPham/MonAnTheoLoai?id=1&sort=giamdantheogia ">Tăng dần</a>
+                            <a href="/SanPham/MonAnTheoLoai?id=1&sort=tangdantheogia ">Giảm dần</a>*@
+                        <select id="SapXepMA" onchange="sapxep()">
+                            <option value="1" selected>Sắp xếp </option>
+                            <option value="2">Giảm dần theo giá</option>
+                            <option value="3">Tăng dần theo giá</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @Html.Action("SapXepMAPartial", "SanPham", new { @id = ViewBag.id, @sort = 1 })
+
+
+
+
+        @*<div class="col-lg-12 col-md-12">
+                <div class="pagination-area">
+                    <a href="#" class="prev page-numbers">
+                        <i class="flaticon-left-arrow-1"></i>
+                    </a>
+                    <a href="#" class="page-numbers">1</a>
+                    <a href="#" class="page-numbers">2</a>
+                    <span class="page-numbers current" aria-current="page">2</span>
+                    <a href="#" class="page-numbers">3</a>
+                    <a href="#" class="page-numbers">4</a>
+                    <a href="#" class="next page-numbers">
+                        <i class="flaticon-right-arrow-1"></i>
+                    </a>
+                </div>
+            </div>*@
+
+        <!--</div>-->
+    </div>
+</section>
+
+
+@section script{
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function sapxep () {
+                var sapxep = $("#SapXepMA").val();
+                $.ajax({
+                    url: "/SanPham/SapXepMAPartial",
+                    method: "post",
+                    type: "html",
+                    data: { id: "@ViewBag.id", sort: sapxep },
+                    success: function (data) {
+                        $("#SapXep").html(data)
+                    }
+                });
+            
+        }
+    </script>
+}
+
+
+
+

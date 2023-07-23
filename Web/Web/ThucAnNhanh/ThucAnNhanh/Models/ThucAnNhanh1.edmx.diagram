@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b7a4ef2010c245d9996a09aedcfc9661" Name="Diagram1">
+        <EntityTypeShape EntityType="ThucAnNhanhModel.BanAn" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.BangGia" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.Banner" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.ChiTietHoaDon" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.ChiTietOrder" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.ChiTietPhieuNhap" Width="1.5" PointX="8.25" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.DM_ManHinh" Width="1.5" PointX="1.5" PointY="25.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.HoaDon" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.KhachHang" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.LoaiMonAn" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.LoaiNhanVien" Width="1.5" PointX="1.5" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.MonAn" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.NguyenLieu" Width="1.5" PointX="6" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.NhanVien" Width="1.5" PointX="0.75" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.Order" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.PhanCong" Width="1.5" PointX="3" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.PhieuNhap" Width="1.5" PointX="3" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.ThanhPhanMonAn" Width="1.5" PointX="8.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.Voucher" Width="1.5" PointX="0.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ThucAnNhanhModel.Voucher_KhachHang" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_HoaDon_BanAn" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_BangGia_MonAn" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_ChiTietHoaDon_MonAn" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_HoaDon_ChiTietHoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_ChiTietOrder_MonAn" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_ChiTietOrder_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_ChiTietPhieuNhap_NguyenLieu" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_ChiTietPhieuNhap_PhieuNhap" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_HoaDon_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_HoaDon_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_Order_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_Voucher_KhachHang_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_MonAn_LoaiMonAn" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_ThanhPhanMonAn_MonAn" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_ThanhPhanMonAn_NguyenLieu" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_PhanCong_PhanCong" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_PhieuNhap_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.FK_Voucher_KhachHang_Voucher" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.NhomNhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="ThucAnNhanhModel.PhanQuyen" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

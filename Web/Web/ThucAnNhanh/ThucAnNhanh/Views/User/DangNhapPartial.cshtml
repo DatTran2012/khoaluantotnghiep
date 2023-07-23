@@ -1,0 +1,30 @@
+﻿@using ThucAnNhanh.Models;
+@{
+    KhachHang kh = (KhachHang)Session["taikhoan"];
+}
+<div>
+    @if (@Session["taikhoan"] == null)
+    {
+        <div class="option-item">
+            <a href="/User/DangNhap" class="option-item">
+                Đăng nhập <br />
+            </a>
+        </div>
+
+    }
+    else
+    {
+        @*<span style="text-decoration:none; color:whitesmoke">
+                Xin chào:
+            </span>*@
+        <div class="option-item">
+            <!--<a href="@*/User/ThongTinKhachHang*@ #" class="option-item">-->@*  *@
+            <a href="#" class="option-item">
+
+                @kh.TenKH
+            </a>
+        </div>
+
+
+    }
+</div>

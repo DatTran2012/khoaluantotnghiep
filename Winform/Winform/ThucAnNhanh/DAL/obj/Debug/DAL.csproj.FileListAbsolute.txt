@@ -1,0 +1,7 @@
+D:\KhoaLuan\ThucAnNhanh\DAL\bin\Debug\DAL.dll.config
+D:\KhoaLuan\ThucAnNhanh\DAL\bin\Debug\DAL.dll
+D:\KhoaLuan\ThucAnNhanh\DAL\bin\Debug\DAL.pdb
+D:\KhoaLuan\ThucAnNhanh\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\KhoaLuan\ThucAnNhanh\DAL\obj\Debug\DAL.dll
+D:\KhoaLuan\ThucAnNhanh\DAL\obj\Debug\DAL.pdb
+D:\KhoaLuan\ThucAnNhanh\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache

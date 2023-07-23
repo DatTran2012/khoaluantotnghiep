@@ -1,0 +1,18 @@
+﻿@*@model IEnumerable<ThucAnNhanh.Models.GioHangModel>*@
+@{
+    ViewBag.Title = "HienThiGioHang";
+    Layout = "~/Views/Shared/_LayoutShare2.cshtml";
+}
+
+<section id="content" class="cart-area ptb-100">
+    <div class="container">
+        <div class="row">
+            @Html.Action("GHPartial", "GioHang")
+        </div>
+    </div>
+</section>
+
+
+
+
+

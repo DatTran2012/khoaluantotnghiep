@@ -1,0 +1,142 @@
+﻿@model ThucAnNhanh.Models.KhachHang
+@using reCAPTCHA.MVC
+@{
+    ViewBag.Title = "DangKi";
+    Layout = "~/Views/Shared/_LayoutShare2.cshtml";
+}
+
+
+<div class="signup-area ptb-100">
+    <div class="container">
+        <div class="signup-form">
+            <h3>Tạo tài khoản</h3>
+            <form action="/User/DangKi" method="post">
+                @Html.AntiForgeryToken()
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label">Tên của bạn</label>
+                            <input type="text" class="form-control" name="TenKH" placeholder="Tên của bạn">
+                            @Html.ValidationMessageFor(m => m.TenKH, "", new { @class = "text-danger", @style = "font-size: 12px" })
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label">Chọn giới tính</label>
+                            <br />
+                            <select class="form-group" name="GioiTinh">
+                                <option value="Nam">Nam</option>
+                                <option value="Nữ">Nữ</option>
+                            </select>
+                            <br/>
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger", @style = "font-size: 12px" })
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="text" class="form-control" name="Email" placeholder="Email">
+
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger", @style = "font-size: 12px" })
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" name="MatKhau" id="password" placeholder="Mật khẩu">
+
+                            @Html.ValidationMessageFor(m => m.MatKhau, "", new { @class = "text-danger", @style = "font-size: 12px" })
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label">Nhập lại mật khẩu</label>
+                            <input type="password" class="form-control" name="ReMatKhau" id="repassword" onkeyup="xacnhanMK()" placeholder="Nhập lại mật khẩu">
+                            <p id="mess" style="font-size:11px"></p>
+
+                            @Html.ValidationMessageFor(m => m.MatKhau, "", new { @class = "text-danger", @style = "font-size: 12px" })
+                        </div>
+                    </div>
+                    @*<div class="col-lg-12">
+                            <label class="form-label col-md-6">Giới tính</label>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="txtGioiTinh" value="Nam">
+
+                            </div>
+                            <div class="form-check col-md-6">
+                                <input type="checkbox" class="form-check-input" name="txtGioiTinh" value="Nữ">
+
+                            </div>
+                        </div>*@
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label">Ngày sinh</label>
+                            <input type="date" class="form-control" name="NgaySinh" placeholder="Ngày sinh">
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label">Địa chỉ</label>
+                            <input type="text" class="form-control" name="DiaChi" placeholder="Địa chỉ">
+
+                            @Html.ValidationMessageFor(m => m.DiaChi, "", new { @class = "text-danger", @style = "font-size: 12px" })
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="form-label">Số điện thoại</label>
+                            <input type="text" class="form-control" name="SDT" placeholder="Số điện thoại">
+
+                            @Html.ValidationMessageFor(m => m.SDT, "", new { @class = "text-danger", @style = "font-size: 12px" })
+                        </div>
+                    </div>
+                    @*<div class="col-lg-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="checkme">
+                                <label class="form-check-label" for="checkme">Keep Me Sign Up</label>
+                            </div>
+                        </div>*@
+                    <div class="col-sm-12">
+                        @Html.Recaptcha()
+                        @Html.ValidationMessage("ReCaptcha", new { @class = "text-danger", @style = "font-size: 12px" })
+                    </div>
+
+                    <div class="col-sm-12">
+                        <div class="send-btn">
+                            <button type="submit" class="default-btn">
+                                Đăng kí ngay
+                                <span style="top: -4.04559px; left: 91.8733px;"></span>
+                            </button>
+                        </div>
+                        <br>
+                        <span>Bạn đã có tài khoản? <a href="/User/DangNhap">Đăng nhập!</a></span>
+                        <br />
+                        @Html.ValidationSummary(true, "Vui lòng điền đây đủ thông tin", new { @class = "text-danger", @style = "font-size: 12px;color:red" })
+                        <span class="text-danger">@ViewBag.thongbao1</span>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function xacnhanMK() {
+        var txtpass = document.getElementById('password').value;
+        var txtrepass = document.getElementById('repassword').value;
+        if (txtpass == txtrepass) {
+            document.getElementById('mess').innerHTML = "Mật khẩu Trùng Khớp";
+            document.getElementById('mess').style.color = "Green";
+        }
+        else {
+            document.getElementById('mess').innerHTML = "Mật Khẩu Không Trùng Khớp";
+            document.getElementById('mess').style.color = "Red";
+        }
+    }
+</script>
+

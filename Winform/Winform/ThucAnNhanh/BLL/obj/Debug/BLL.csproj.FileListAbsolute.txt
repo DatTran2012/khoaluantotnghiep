@@ -1,0 +1,10 @@
+D:\KhoaLuan\ThucAnNhanh\BLL\bin\Debug\BLL.dll
+D:\KhoaLuan\ThucAnNhanh\BLL\bin\Debug\BLL.pdb
+D:\KhoaLuan\ThucAnNhanh\BLL\bin\Debug\DAL.dll
+D:\KhoaLuan\ThucAnNhanh\BLL\bin\Debug\DAL.pdb
+D:\KhoaLuan\ThucAnNhanh\BLL\bin\Debug\DAL.dll.config
+D:\KhoaLuan\ThucAnNhanh\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\KhoaLuan\ThucAnNhanh\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\KhoaLuan\ThucAnNhanh\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\KhoaLuan\ThucAnNhanh\BLL\obj\Debug\BLL.dll
+D:\KhoaLuan\ThucAnNhanh\BLL\obj\Debug\BLL.pdb

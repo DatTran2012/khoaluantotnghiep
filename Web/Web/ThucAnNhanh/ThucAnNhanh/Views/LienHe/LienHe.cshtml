@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewBag.Title = "LienHe";
+    Layout = "~/Views/Shared/_LayoutShare2.cshtml";
+}
+
+<section class="contact-box-area pt-100 pb-70">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="box-item">
+                    <div class="contact-box-content">
+                        <div class="icon">
+                            <i class="flaticon-world"></i>
+                        </div>
+                        <p>140 Lê Trọng Tấn</p>
+                        <div class="shape">
+                            <img src="assets/img/image-icon/2.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="box-item">
+                    <ul class="box-table">
+                        <li>Chủ nhật<span>Đóng cửa</span></li>
+                        <li>Thứ 2<span>8.00 - 20.00</span></li>
+                        <li>Thứ 3<span>10:00-5.00</span></li>
+                        <li>Thứ 4<span>12:00-9:00</span></li>
+                        <li>Thứ 5<span>3:00-1:00</span></li>
+                        <li>Thứ 6<span>9:00-12:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                <div class="box-item">
+                    <div class="contact-box-content">
+                        <div class="icon">
+                            <i class="flaticon-phone-ringing"></i>
+                        </div>
+                        <p>
+                            <a href="tel:065432134567">+84 78 632 1015</a>
+                            <a href="mailto:support@handout.com">Email.attran123456@gmail.com</a>
+                        </p>
+                        <div class="shape">
+                            <img src="assets/img/image-icon/1.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-area pb-100">
+    <div class="container">
+        <div class="contact-form">
+            <div class="title">
+                <span>Liên hệ</span>
+                <h3>Hãy liên hệ với chúng tôi để nhận ưu đãi món mới</h3>
+            </div>
+            <form name="myform" action="/LienHe/LienHeSubmit" method="post" @*novalidate="true"*@ onsubmit="return validateform()">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" required data-error="Vui lòng điền tên" placeholder="Name">
+                            <div id="loi" class="help-block with-errors" name="loi"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control" required data-error="Vui lòng điền email của bạn" placeholder="Email">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <input type="text" name="phone_number" id="phone_number" required data-error="Vui lòng nhận sdt của bạn" class="form-control" placeholder="Phone">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject" placeholder="Subject">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+<textarea name="message" class="form-control" id="message" cols="30" rows="5" required data-error="Write your message" placeholder="Vui lòng điền lời nhắn của bạn"></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <button type="submit" id="sendmail" class="default-btn disabled" style="pointer-events: all; cursor: pointer;">
+                            Gửi liên hệ
+                            <i class="flaticon-play-button"></i>
+                            <span></span>
+                        </button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<div class="map pb-100">
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.250543368804!2d106.6288567!3d10.8065148!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUaOG7sWMgcGjhuqltIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1641190401135!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        @*<div id="map" style='width: 400px; height: 300px;'></div>*@
+    </div>
+</div>
+
+
+@*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFrfwh3XP-QoKRCtdJ6gXhKCFxkMnBjEQ&callback=initMap&v=weekly"
+        async>
+</script>
+<script>
+    function initMap() {
+        const uluru = { lat: -25.363, lng: 131.044 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+        });
+        const contentString = '<p>140 Lê Trọng Tấn</p>';
+        const infowindow = new google.maps.InfoWindow({
+            content: contentString,
+        });
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map,
+            title: "AFAST",
+        });
+
+        marker.addListener("click", () => {
+            infowindow.open({
+                anchor: marker,
+                map,
+                shouldFocus: false,
+            });
+        });
+    }
+</script>*@
+
+
+

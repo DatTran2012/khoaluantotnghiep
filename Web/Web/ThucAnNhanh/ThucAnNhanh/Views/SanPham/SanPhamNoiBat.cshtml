@@ -1,0 +1,92 @@
+﻿@model IEnumerable<ThucAnNhanh.Models.MonAn>
+<!--Sản phẩm nỗi bật-->
+
+<div class="container">
+    <div class="section-title">
+        <span>Danh sách nổi bật</span>
+        <h2>Các món đang giảm giá</h2>
+    </div>
+    <div class="burger-shop-slider owl-carousel owl-theme owl-loaded owl-drag">
+        <div class="owl-stage-outer">
+            <div class="owl-stage " style="transform: translate3d(-1326px, 0px, 0px); transition: all 2s ease 0s; width: 5304px;">
+                @foreach (var item in Model)
+                {
+                    <div class="owl-item cloned">
+                        <div class="burger-shop-item">
+                            <div class="image">
+                                <a href="/SanPham/ChiTienMA?id=@item.ID"><img src="@item.Anh" alt="image"></a>
+                                <div class="burger-btn">
+                                    <!--@**@ -->
+                                    <input type="text" hidden="hidden" id="idMonAn" value="@item.ID" />
+                                    @*Url.Action("ThemGioHang", "GioHang", new { @id = item.ID, @strURL = Request.Url.ToString()})*@
+                                    <button  id="@item.ID" class="default-btn" onclick="ThemGioHang(this)">
+                                        Đặt món ngay
+                                        <i class="flaticon-play-button"></i>
+                                        <span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>@item.TenMA</h3>
+                                <p>@item.MoTa</p>
+                                @if (item.GiaBan == item.GiaKhuyenMai)
+                                {
+                                    <span>
+                                        @string.Format("{0:0,0}", item.GiaKhuyenMai) VNĐ
+                                        @*@string.Format("{0:0,0}", item.GiaBan.ToString())VND*@
+                                    </span>
+                                }
+                                else if (item.GiaBan > item.GiaKhuyenMai)
+                                {
+                                    <span>
+                                        @string.Format("{0:0,0}", item.GiaKhuyenMai) VNĐ
+                                    </span>
+
+                                    <br />
+                                    <span>
+                                        @string.Format("{0:0,0}", item.GiaBan) VNĐ
+                                    </span>
+                                }
+                                @*<span style="text-decoration:line-through 3px">@string.Format(item.GiaBan.ToString(), "{0:n}")VND</span>
+                                    <span style="color:rgb(255 0 0)">@string.Format(item.GiaKhuyenMai.ToString(), "{#:##,0}")VND</span>*@
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        @*<div class="owl-nav disabled">
+                    <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
+                    <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
+                </div>
+                <div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div>
+            </div>*@
+    </div>
+</div>
+@*@section Scripts
+{
+    <script type="text/javascript">
+
+        function themgiohang(event) {
+            event.preventDefault();
+            $.ajax({
+                type: 'GET',
+                url: /GioHang/ThemGioHang,
+                datatype: 'json',
+                data: { id  = 1},
+                success(data) {
+                    alert('Thêm thành công');
+                }
+            })
+        }
+
+
+        $(function () {
+            $(document).on('click', '.default-btn', 'themgiohang')
+        })
+    </script>
+
+        
+}*@
+
+

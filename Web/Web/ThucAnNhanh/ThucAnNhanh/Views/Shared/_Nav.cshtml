@@ -1,0 +1,133 @@
+﻿
+
+<div class="navbar-area">
+    <div class="main-responsive-nav">
+        <div class="container">
+            <div class="main-responsive-menu">
+                <div class="logo">
+                    <a href="/TrangChu/Index">
+                        <h1>A'Fast</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-navbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="/TrangChu/Index">
+                    <h1>A'Fast</h1>
+                </a>
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="/TrangChu/Index" class="nav-link">
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Về chúng tôi
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Thực đơn
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                @foreach (var item in ViewBag.LoaiMA)
+                                {
+                    <li class="nav-item">
+                        <a href="/SanPham/MonAnTheoLoai?id=@item.ID" class="nav-link">
+                            @item.TenLoaiMA
+                        </a>
+                    </li>
+}
+                            </ul>
+                        </li>
+                        @*<li class="nav-item">
+            <a href="#" class="nav-link">
+                Sự kiện
+                <i class='bx bx-chevron-down'></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li class="nav-item">
+                    <a href="blog-1.html" class="nav-link">
+                        Blog Grid
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog-2.html" class="nav-link">
+                        Blog Right Sidebar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog-details.html" class="nav-link">
+                        Blog Details
+                    </a>
+                </li>
+            </ul>
+        </li>*@
+
+                        <li class="nav-item">
+                            <a href="/LienHe/LienHe" class="nav-link">
+                                Liên hệ
+
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="others-options d-flex align-items-center">
+                        @*<div class="option-item">
+                                <div class="cart-btn">
+                                    <a href="cart.html">
+                                        <i class="flaticon-shopping-cart"></i>
+                                        <span>0</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="option-item">
+                                <a href="shop.html" class="default-btn">
+                                    Đặt hàng ngay
+                                    <span></span>
+                                </a>
+                            </div>*@
+                        @Html.Action("GioHangPartial", "GioHang")
+                    </div>
+                    <div class="others-options d-flex align-items-center" style="margin-left:30px">
+                        @Html.Action("DangKiPartial", "User")
+
+                        @Html.Action("DangNhapPartial", "User")
+
+                        @Html.Action("DangXuatPartial", "User")
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="others-option-for-responsive">
+        <div class="container">
+            <div class="dot-menu">
+                <div class="inner">
+                    <div class="circle circle-one"></div>
+                    <div class="circle circle-two"></div>
+                    <div class="circle circle-three"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="option-inner">
+                    <div class="others-options d-flex align-items-center">
+                        <div class="option-item">
+                            <div class="cart-btn">
+                                @Html.Action("GioHangPartial", "GioHang")
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

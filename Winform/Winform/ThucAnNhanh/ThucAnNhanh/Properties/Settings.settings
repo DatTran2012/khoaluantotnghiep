@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ThucAnNhanh.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ChuoiKetNoi" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=LAPTOP-K9NJ77AV\SQLEXPRESS;Initial Catalog=ThucAnNhanh;User ID=sa;Password=sa2019</Value>
+    </Setting>
+    <Setting Name="ChuoiKetNoi2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=45.119.82.72;Initial Catalog=ThucAnNhanh;User ID=khd;Password=!15102000Duong</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

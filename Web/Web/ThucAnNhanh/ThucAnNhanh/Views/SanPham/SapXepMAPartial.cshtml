@@ -1,0 +1,104 @@
+﻿@model  IEnumerable<ThucAnNhanh.Models.MonAn>
+
+<style>
+    a:hover{
+        cursor: pointer;
+    }
+</style>
+<!--<div class="woocommerce-topbar">
+    <div class="row align-items-center">
+        <div class="col-lg-8 col-md-7 col-sm-6">
+            <div class="woocommerce-result-count">
+                <p>Đã tìm thấy kết quả: @ViewBag.loai</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-6">
+            <div class="woocommerce-topbar-ordering">-->
+@*<a href="/SanPham/MonAnTheoLoai?id=@Model.ID_LoaiMA&sort=giamdantheogia ">Giảm dần</a>
+    <a href="/SanPham/MonAnTheoLoai?id=@Model.ID_LoaiMA&sort=tangdantheogia ">Tăng dần</a>*@
+@*<select>
+        <option selected>Mặc định </option>
+        <option>Sắp xếp theo giá: thấp tới cao</option>
+        <option>Sắp xếp theo giá: cao tới thấp</option>
+    </select>*@
+
+<!--</div>
+        </div>
+    </div>
+</div>-->
+<div id="SapXep" class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-3 col-md-6">
+            <div class="single-product">
+                <div class="product-image">
+                    <a href="/SanPham/ChiTienMA?id=@item.ID">
+                        <img src="@item.Anh" alt="image">
+                    </a>
+                    @*href="@Url.Action("ThemGioHang", "GioHang", new { @id = item.ID })" data-id="@item.ID"*@
+                    <a id="@item.ID" class="add-to-cart-btn" onclick="ThemGioHang(this)">
+                        Thêm vào giỏ hàng
+                        <i class="flaticon-shopping-cart"></i>
+                    </a>
+                </div>
+                <div class="product-content">
+                    <h3>
+                        <a href="#">
+                            @item.TenMA
+                        </a>
+                    </h3>
+                    <div class="price">
+                        @if (item.GiaBan == item.GiaKhuyenMai)
+                        {
+                            <span class="new">@string.Format("{0:0,0}", item.GiaKhuyenMai) VND</span>
+                        }
+                        else if (item.GiaBan > item.GiaKhuyenMai)
+                        {
+                            <span class="new">@string.Format("{0:0,0}", item.GiaKhuyenMai) VND</span>
+                            <br />
+                            <span class="old">@string.Format("{0:0,0}", item.GiaBan) VND</span>
+                        }
+                        @*<span style="color:red" class="new">@item.GiaKhuyenMai VND</span>
+                            <span style="color:orange" class="old">@item.GiaBan VND</span>*@
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+    @*<div class="col-lg-12 col-md-12">
+            <div class="pagination-area">
+                <a href="#" class="prev page-numbers">
+                    <i class="flaticon-left-arrow-1"></i>
+                </a>
+                <a href="#" class="page-numbers">1</a>
+                <a href="#" class="page-numbers">2</a>
+                <span class="page-numbers current" aria-current="page">2</span>
+                <a href="#" class="page-numbers">3</a>
+                <a href="#" class="page-numbers">4</a>
+                <a href="#" class="next page-numbers">
+                    <i class="flaticon-right-arrow-1"></i>
+                </a>
+            </div>
+        </div>*@
+
+</div>
+
+@*@section script{
+    <script src="sweetalert2.all.min.js"></script>
+    <script>
+        function themthanhcong(event) {
+            event.preventDefault()
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your work has been saved',
+                showConfirmButton: false,
+                timer: 1500
+            })
+        }
+    </script>
+}*@

@@ -1,0 +1,149 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:SE Asia Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:+0700
+TZOFFSETTO:+0700
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN=luongdong059@gmail.com;RSVP=TRUE:mailto:luongdong059@gmail.com
+ATTENDEE;CN=chuhan050520@gmail.com;RSVP=TRUE:mailto:chuhan050520@gmail.com
+ATTENDEE;CN=khapm2000@gmail.com;RSVP=TRUE:mailto:khapm2000@gmail.com
+ATTENDEE;CN=baotiantu@gmail.com;RSVP=TRUE:mailto:baotiantu@gmail.com
+CLASS:PUBLIC
+CREATED:20211007T095037Z
+DESCRIPTION:Dear các bạn\,\n\n \n\nNgày mai là tới ngày các bạn 
+	trình bài những gì mình tìm hiểu thông qua plan như anh đã đ
+	ưa.\n\n \n\nCác ban chuẩn bi slide của minh roi trình bài vào ng
+	ày mai nhé:\n\n-          Fri 10/7/2021 lúc: 9:30 AM to 10:30AM\n\n-   
+	       Location: Zoom.\n\n-          ID: 92817208289 - 164F\n\n \n\nBên d
+	ưới là Link cua Zoom:\n\nhttps://zoom.us/s/92817208289?zak=eyJ0eXAiOiJ
+	KV1QiLCJzdiI6IjAwMDAwMSIsInptX3NrbSI6InptX28ybSIsImFsZyI6IkhTMjU2In0.eyJhd
+	WQiOiJjbGllbnRzbSIsInVpZCI6Ik53SlVVa2NiUkdDM3hrNVFmX2wycEEiLCJpc3MiOiJ3ZWI
+	iLCJzdHkiOjEwMCwid2NkIjoiYXcxIiwiY2x0IjowLCJtbnVtIjoiOTI\n\n \n\nRegards\,
+	\n\nKhanh\n\n \n\n
+DTEND;TZID="SE Asia Standard Time":20211008T103000
+DTSTAMP:20211007T095037Z
+DTSTART;TZID="SE Asia Standard Time":20211008T093000
+LAST-MODIFIED:20211007T095037Z
+LOCATION:Zoom: https://zoom.us/s/92817208289?zak=eyJ0eXAiOiJKV1QiLCJzdiI6Ij
+	AwMDAwMSIsInptX3NrbSI6InptX28ybSIsImFsZyI6IkhTMjU2In0.eyJhdWQiOiJjbGllbnRz
+	bSIsInVpZCI6Ik53SlVVa2NiUkdDM3hrNVFmX2wycEEiLCJpc3MiOiJ3ZWIiLCJzdHkiOjEwMC
+	wid2NkIjoiYXcxIiwiY2x0IjowLCJtbnVtIjoiOTI
+ORGANIZER;CN="Ha Trang Tuan Khanh":mailto:tuankhanh@ascvn.com.vn
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:[HUFI] - Intership bao cáo thực tập
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000304C1B749BBBD701000000000000000
+	0100000004721E0354B75B348B22E19F48AFD1C3D
+X-ALT-DESC;FMTTYPE=text/html:<html xmlns:v="urn:schemas-microsoft-com:vml" 
+	xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-mic
+	rosoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/
+	12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Co
+	ntent-Type content="text/html\; charset=utf-8"><meta name=Generator conten
+	t="Microsoft Word 15 (filtered medium)"><style><!--\n/* Font Definitions *
+	/\n@font-face\n	{font-family:Wingdings\;\n	panose-1:5 0 0 0 0 0 0 0 0 0\;}
+	\n@font-face\n	{font-family:"Cambria Math"\;\n	panose-1:2 4 5 3 5 4 6 3 2 
+	4\;}\n@font-face\n	{font-family:Calibri\;\n	panose-1:2 15 5 2 2 2 4 3 2 4\
+	;}\n@font-face\n	{font-family:Tahoma\;\n	panose-1:2 11 6 4 3 5 4 4 2 4\;}\
+	n/* Style Definitions */\np.MsoNormal\, li.MsoNormal\, div.MsoNormal\n	{ma
+	rgin:0in\;\n	margin-bottom:.0001pt\;\n	font-size:11.0pt\;\n	font-family:"C
+	alibri"\,sans-serif\;}\na:link\, span.MsoHyperlink\n	{mso-style-priority:9
+	9\;\n	color:#0563C1\;\n	text-decoration:underline\;}\na:visited\, span.Mso
+	HyperlinkFollowed\n	{mso-style-priority:99\;\n	color:#954F72\;\n	text-deco
+	ration:underline\;}\np.MsoListParagraph\, li.MsoListParagraph\, div.MsoLis
+	tParagraph\n	{mso-style-priority:34\;\n	margin-top:0in\;\n	margin-right:0i
+	n\;\n	margin-bottom:0in\;\n	margin-left:.5in\;\n	margin-bottom:.0001pt\;\n
+		font-size:11.0pt\;\n	font-family:"Calibri"\,sans-serif\;}\np.msonormal0\,
+	 li.msonormal0\, div.msonormal0\n	{mso-style-name:msonormal\;\n	mso-margin
+	-top-alt:auto\;\n	margin-right:0in\;\n	mso-margin-bottom-alt:auto\;\n	marg
+	in-left:0in\;\n	font-size:12.0pt\;\n	font-family:"Times New Roman"\,serif\
+	;}\nspan.EmailStyle19\n	{mso-style-type:personal-compose\;\n	font-family:"
+	Calibri"\,sans-serif\;\n	color:windowtext\;}\n.MsoChpDefault\n	{mso-style-
+	type:export-only\;\n	font-size:10.0pt\;\n	font-family:"Calibri"\,sans-seri
+	f\;}\n@page WordSection1\n	{size:8.5in 11.0in\;\n	margin:1.0in 1.0in 1.0in
+	 1.0in\;}\ndiv.WordSection1\n	{page:WordSection1\;}\n/* List Definitions *
+	/\n@list l0\n	{mso-list-id:939987860\;\n	mso-list-type:hybrid\;\n	mso-list
+	-template-ids:216807352 253107110 67698691 67698693 67698689 67698691 6769
+	8693 67698689 67698691 67698693\;}\n@list l0:level1\n	{mso-level-start-at:
+	0\;\n	mso-level-number-format:bullet\;\n	mso-level-text:-\;\n	mso-level-ta
+	b-stop:none\;\n	mso-level-number-position:left\;\n	text-indent:-.25in\;\n	
+	font-family:"Calibri"\,sans-serif\;\n	mso-fareast-font-family:Calibri\;}\n
+	@list l0:level2\n	{mso-level-number-format:bullet\;\n	mso-level-text:o\;\n
+		mso-level-tab-stop:none\;\n	mso-level-number-position:left\;\n	text-inden
+	t:-.25in\;\n	font-family:"Courier New"\;}\n@list l0:level3\n	{mso-level-nu
+	mber-format:bullet\;\n	mso-level-text:\;\n	mso-level-tab-stop:none\;\n	
+	mso-level-number-position:left\;\n	text-indent:-.25in\;\n	font-family:Wing
+	dings\;}\n@list l0:level4\n	{mso-level-number-format:bullet\;\n	mso-level-
+	text:\;\n	mso-level-tab-stop:none\;\n	mso-level-number-position:left\;\
+	n	text-indent:-.25in\;\n	font-family:Symbol\;}\n@list l0:level5\n	{mso-lev
+	el-number-format:bullet\;\n	mso-level-text:o\;\n	mso-level-tab-stop:none\;
+	\n	mso-level-number-position:left\;\n	text-indent:-.25in\;\n	font-family:"
+	Courier New"\;}\n@list l0:level6\n	{mso-level-number-format:bullet\;\n	mso
+	-level-text:\;\n	mso-level-tab-stop:none\;\n	mso-level-number-position:
+	left\;\n	text-indent:-.25in\;\n	font-family:Wingdings\;}\n@list l0:level7\
+	n	{mso-level-number-format:bullet\;\n	mso-level-text:\;\n	mso-level-tab
+	-stop:none\;\n	mso-level-number-position:left\;\n	text-indent:-.25in\;\n	f
+	ont-family:Symbol\;}\n@list l0:level8\n	{mso-level-number-format:bullet\;\
+	n	mso-level-text:o\;\n	mso-level-tab-stop:none\;\n	mso-level-number-positi
+	on:left\;\n	text-indent:-.25in\;\n	font-family:"Courier New"\;}\n@list l0:
+	level9\n	{mso-level-number-format:bullet\;\n	mso-level-text:\;\n	mso-le
+	vel-tab-stop:none\;\n	mso-level-number-position:left\;\n	text-indent:-.25i
+	n\;\n	font-family:Wingdings\;}\nol\n	{margin-bottom:0in\;}\nul\n	{margin-b
+	ottom:0in\;}\n--></style><!--[if gte mso 9]><xml>\n<o:shapedefaults v:ext=
+	"edit" spidmax="1026" />\n</xml><![endif]--><!--[if gte mso 9]><xml>\n<o:s
+	hapelayout v:ext="edit">\n<o:idmap v:ext="edit" data="1" />\n</o:shapelayo
+	ut></xml><![endif]--></head><body lang=EN-US link="#0563C1" vlink="#954F72
+	"><div class=WordSection1><p class=MsoNormal>Dear các bạn\,<o:p></o:p><
+	/p><p class=MsoNormal><o:p>&nbsp\;</o:p></p><p class=MsoNormal>Ngày mai l
+	à tới ngày các bạn trình bài những gì mình tìm hiểu thông
+	 qua plan như anh đã đưa.<o:p></o:p></p><p class=MsoNormal><o:p>&nbsp
+	\;</o:p></p><p class=MsoNormal>Các ban chuẩn bi slide của minh roi tr
+	ình bài vào ngày mai nhé:<o:p></o:p></p><p class=MsoListParagraph sty
+	le='text-indent:-.25in\;mso-list:l0 level1 lfo2'><![if !supportLists]><spa
+	n style='mso-list:Ignore'>-<span style='font:7.0pt "Times New Roman"'>&nbs
+	p\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\; </span></span>
+	<![endif]>Fri 10/7/2021 lúc: 9:30 AM to 10:30AM<o:p></o:p></p><p class=Ms
+	oListParagraph style='text-indent:-.25in\;mso-list:l0 level1 lfo2'><![if !
+	supportLists]><span style='mso-list:Ignore'>-<span style='font:7.0pt "Time
+	s New Roman"'>&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbs
+	p\; </span></span><![endif]>Location: Zoom.<o:p></o:p></p><p class=MsoList
+	Paragraph style='text-indent:-.25in\;mso-list:l0 level1 lfo2'><![if !suppo
+	rtLists]><span style='color:red'><span style='mso-list:Ignore'>-<span styl
+	e='font:7.0pt "Times New Roman"'>&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\
+	;&nbsp\;&nbsp\;&nbsp\; </span></span></span><![endif]><b><span style='font
+	-size:10.5pt\;font-family:"Tahoma"\,sans-serif\;color:red\;background:whit
+	e'>ID: 92817208289 - 164F</span><span style='color:red'><o:p></o:p></span>
+	</b></p><p class=MsoNormal><o:p>&nbsp\;</o:p></p><p class=MsoNormal>Bên d
+	ưới là Link cua Zoom:<o:p></o:p></p><p class=MsoNormal><a href="https:
+	//zoom.us/s/92817208289?zak=eyJ0eXAiOiJKV1QiLCJzdiI6IjAwMDAwMSIsInptX3NrbS
+	I6InptX28ybSIsImFsZyI6IkhTMjU2In0.eyJhdWQiOiJjbGllbnRzbSIsInVpZCI6Ik53SlVV
+	a2NiUkdDM3hrNVFmX2wycEEiLCJpc3MiOiJ3ZWIiLCJzdHkiOjEwMCwid2NkIjoiYXcxIiwiY2
+	x0IjowLCJtbnVtIjoiOTI">https://zoom.us/s/92817208289?zak=eyJ0eXAiOiJKV1QiL
+	CJzdiI6IjAwMDAwMSIsInptX3NrbSI6InptX28ybSIsImFsZyI6IkhTMjU2In0.eyJhdWQiOiJ
+	jbGllbnRzbSIsInVpZCI6Ik53SlVVa2NiUkdDM3hrNVFmX2wycEEiLCJpc3MiOiJ3ZWIiLCJzd
+	HkiOjEwMCwid2NkIjoiYXcxIiwiY2x0IjowLCJtbnVtIjoiOTI</a><o:p></o:p></p><p cl
+	ass=MsoNormal><o:p>&nbsp\;</o:p></p><p class=MsoNormal>Regards\,<o:p></o:p
+	></p><p class=MsoNormal>Khanh<o:p></o:p></p><p class=MsoNormal><o:p>&nbsp\
+	;</o:p></p></div></body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-AUTOSTARTCHECK:FALSE
+X-MS-OLK-CONFTYPE:0
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+

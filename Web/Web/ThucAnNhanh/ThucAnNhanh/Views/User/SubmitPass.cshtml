@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "SubmitPass";
+    Layout = "~/Views/Shared/_LayoutShare2.cshtml";
+}
+@model ThucAnNhanh.Models.KhachHang
+<div class="container mt-5">
+    <div class="mx-auto col-md-6">
+        <form action="/User/SubmitPass" method="post">
+            <input type="text" name="txttoken" hidden="hidden" value="@Model.Token" />
+            <div class="form-group" style="text-align:center;border-radius:2px;border:1px">
+                <h1 class="form-label">Submit Pass</h1>
+                <br />
+                <label style="float:left">New pass</label>
+                <input placeholder="Vui lòng nhập mật khẩu mới" class="form-control" type="password" name="txtmatkhau" value="" />
+                <br />
+                <button class="btn btn-success" type="submit">Reset password</button>
+                <br />
+            </div>
+        </form>
+    </div>
+</div>
+
+
